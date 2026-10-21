@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "BoraViajar",
+    "slug": "boraviajar",
+    "version": "1.0.0",
+    "scheme": "boraviajar",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.danieldosadi.boraviajar"
+    },
+    "android": {
+      "package": "com.danieldosadi.boraviajar",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#476c43"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
