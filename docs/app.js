@@ -10,7 +10,7 @@ function render(){
  $('#accessGate').hidden=approved;
  if(!approved && $('#editor').open) $('#editor').close();
  $('#account').hidden=!user;
- $('#account').textContent='Sair da conta ↗';
+ $('#add').hidden=!approved;
  $('#filters').innerHTML=[['all','Todos'],...Object.entries(categories).map(([k,v])=>[k,v[0]])].map(([key,label])=>`<button data-filter="${key}" class="${filter===key?'active':''}" aria-pressed="${filter===key}">${label}</button>`).join('');
  const visible=items.filter(i=>filter==='all'||i.category===filter).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  const groups=Object.groupBy(visible,i=>i.date);
